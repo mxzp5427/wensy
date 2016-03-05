@@ -1,0 +1,777 @@
+[ 2016-03-05T22:56:11+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001423s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001381s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457189771 ) AND ( deadline = 0 OR deadline > 1457189771 ) ORDER BY `id` DESC  [ RunTime:0.000252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.000965s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000217s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000597s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.001370s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000215s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000231s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011792s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004342s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000213s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000202s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000184s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457189771 ) AND ( deadline = 0 OR deadline > 1457189771 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000483s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2016-03-05T23:21:24+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001445s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001643s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457191284 ) AND ( deadline = 0 OR deadline > 1457191284 ) ORDER BY `id` DESC  [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.001545s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000260s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000275s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000260s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010944s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000452s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000189s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000268s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457191284 ) AND ( deadline = 0 OR deadline > 1457191284 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002897s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-03-05T23:21:30+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001818s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001335s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457191290 ) AND ( deadline = 0 OR deadline > 1457191290 ) ORDER BY `id` DESC  [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.000962s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000227s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000231s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000203s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000199s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.008589s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000216s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000208s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000195s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457191290 ) AND ( deadline = 0 OR deadline > 1457191290 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.002941s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2016-03-05T23:21:33+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001547s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001395s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457191293 ) AND ( deadline = 0 OR deadline > 1457191293 ) ORDER BY `id` DESC  [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.001128s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000240s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000219s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000192s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009300s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000339s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000251s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457191293 ) AND ( deadline = 0 OR deadline > 1457191293 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-03-05T23:31:03+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001826s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001197s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457191863 ) AND ( deadline = 0 OR deadline > 1457191863 ) ORDER BY `id` DESC  [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.000978s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000238s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000234s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000218s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010367s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000258s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000196s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457191863 ) AND ( deadline = 0 OR deadline > 1457191863 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2016-03-05T23:58:17+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2016-03-05T23:58:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `wensy_ucenter_member` [ RunTime:0.002002s ]
+SQL: SELECT * FROM `wensy_ucenter_member` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000475s ]
+SQL: UPDATE `wensy_ucenter_member` SET `last_login_time`=1457193503,`last_login_ip`='2130706433' WHERE ( `id` = 1 ) [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `wensy_member` [ RunTime:0.001864s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `wensy_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `wensy_action` [ RunTime:0.001748s ]
+SQL: SELECT * FROM `wensy_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `wensy_member` [ RunTime:0.001175s ]
+SQL: SELECT `nickname` FROM `wensy_member` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `wensy_action_log` [ RunTime:0.001815s ]
+SQL: INSERT INTO `wensy_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (1,1,2130706433,'member',1,1457193503,'admin在2016-03-05 23:58登录了后台') [ RunTime:0.000610s ]
+SQL: SELECT * FROM `wensy_action` WHERE ( `name` = 'user_login' ) LIMIT 1   [ RunTime:0.000183s ]
+NOTIC: [8] Undefined offset: 1 /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 672 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 672 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_action_log` WHERE ( `action_id` = 1 ) AND ( `user_id` = 1 ) AND ( `create_time` > 1457107103 ) LIMIT 1   [ RunTime:0.002545s ]
+SQL: UPDATE `wensy_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.000863s ]
+SQL: UPDATE `wensy_member` SET `login`=`login`+1,`last_login_time`=1457193503,`last_login_ip`='2130706433' WHERE ( `uid` = 1 ) [ RunTime:0.000222s ]
+
+[ 2016-03-05T23:58:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.002029s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000992s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Index/index%' ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001076s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 1 )  [ RunTime:0.000766s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 1 ) AND ( `hide` = 0 )  [ RunTime:0.000200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `wensy_addons` [ RunTime:0.001976s ]
+SQL: SELECT `config` FROM `wensy_addons` WHERE ( `name` = 'SiteStat' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `wensy_member` [ RunTime:0.001051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_member` LIMIT 1   [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `wensy_action_log` [ RunTime:0.001107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_action_log` LIMIT 1   [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.002692s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_document` LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.002417s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_category` LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `wensy_model` [ RunTime:0.002120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_model` LIMIT 1   [ RunTime:0.000163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021666s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.002281s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run SiteStat [ RunTime:0.020287s ]
+SQL: SELECT `config` FROM `wensy_addons` WHERE ( `name` = 'SystemInfo' ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.458848s ]
+SQL: select version() as v; [ RunTime:0.000765s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005572s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.433301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.438828s ]
+INFO: Run SystemInfo [ RunTime:0.438943s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.459319s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005903s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.433301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.439159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001202s ]
+
+[ 2016-03-05T23:58:27+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/mydocument.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001099s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000313s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Article/mydocument%' ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001052s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 2 )  [ RunTime:0.000480s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 2 ) AND ( `hide` = 0 )  [ RunTime:0.000232s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '内容' ) AND ( `pid` = 2 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `wensy_auth_group_access` [ RunTime:0.001906s ]
+SQL: SELECT `extend_id` FROM wensy_auth_group_access g INNER JOIN wensy_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001429s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY pid,sort  [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001254s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wensy_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` IN ('0','1','2') ) AND ( `uid` = 1 ) AND ( `pid` = 0 ) ORDER BY update_time desc LIMIT 0,10   [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000893s ]
+
+[ 2016-03-05T23:58:38+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/group.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001080s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000330s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Config/group%' ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.000969s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000231s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000212s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000259s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000267s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `wensy_config` [ RunTime:0.001268s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wensy_config` WHERE ( `status` = 1 ) AND ( `group` = 1 ) ORDER BY sort  [ RunTime:0.000588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2016-03-05T23:58:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/index.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001027s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000373s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/index%' ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001200s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000236s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000216s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000225s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001630s ]
+SQL: SELECT `id`,`name`,`title`,`sort`,`pid`,`allow_publish`,`status` FROM `wensy_category` WHERE ( `status` > -1 ) ORDER BY sort  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007672s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.012050s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017700s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004353s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004950s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004527s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005109s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004692s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2016-03-05T23:58:43+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.004070s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000594s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001070s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000195s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000166s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000219s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000182s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001744s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `wensy_model` [ RunTime:0.001458s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type` FROM `wensy_model` WHERE ( `status` = 1 ) AND ( `extend` = 1 )  [ RunTime:0.000586s ]
+NOTIC: [8] Undefined variable: info /Users/moxi/Documents/web/wensy/Runtime/Cache/Admin/dfed54471f23c5cc0f29d10cfac5ae98.php 第 303 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2016-03-05T23:58:44+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001328s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001495s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457193524 ) AND ( deadline = 0 OR deadline > 1457193524 ) ORDER BY `id` DESC  [ RunTime:0.000238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.002046s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000383s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000206s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000197s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.010846s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000173s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000294s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000240s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457193524 ) AND ( deadline = 0 OR deadline > 1457193524 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000555s ]
+
+[ 2016-03-05T23:59:07+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001534s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000332s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001118s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000219s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000193s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000225s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000233s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001811s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( `name` = 'blog' ) LIMIT 1   [ RunTime:0.000416s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 981 行.
+SQL: INSERT INTO `wensy_category` (`title`,`name`,`allow_publish`,`check`,`model`,`type`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('博客','blog',0,0,'2','2',0,1,1,0,10,'','','','','','','',0,0,1457193547,1457193547,1) [ RunTime:0.000291s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `wensy_action` [ RunTime:0.001062s ]
+SQL: SELECT * FROM `wensy_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `wensy_action_log` [ RunTime:0.001005s ]
+SQL: INSERT INTO `wensy_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',42,1457193547,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000410s ]
+
+[ 2016-03-05T23:59:09+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/index.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.002218s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000331s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/index%' ) LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001063s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000212s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000219s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000234s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000231s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001516s ]
+SQL: SELECT `id`,`name`,`title`,`sort`,`pid`,`allow_publish`,`status` FROM `wensy_category` WHERE ( `status` > -1 ) ORDER BY sort  [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006703s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011330s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.017176s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004346s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004959s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004529s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005118s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004692s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000008s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.005279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2016-03-05T23:59:14+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.002054s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000360s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/edit%' ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001035s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=81 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000319s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000312s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000347s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000332s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001755s ]
+NOTIC: [8] Undefined index: name /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: meta_title /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: keywords /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: meta_title /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 981 行.
+SQL: UPDATE `wensy_category` SET `sort`=3,`title`='博客',`update_time`=1457193554,`status`=1 WHERE ( `id` = 42 ) [ RunTime:0.000376s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `wensy_action` [ RunTime:0.002760s ]
+SQL: SELECT * FROM `wensy_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `wensy_action_log` [ RunTime:0.001024s ]
+SQL: INSERT INTO `wensy_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',42,1457193554,'操作url：/index.php?s=/Admin/Category/edit.html') [ RunTime:0.000191s ]
+
+[ 2016-03-05T23:59:18+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add/pid/42.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001999s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000300s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001499s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000227s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000210s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000265s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000223s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001638s ]
+SQL: SELECT `id`,`name`,`title`,`status` FROM `wensy_category` WHERE ( `id` = 42 ) LIMIT 1   [ RunTime:0.000224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2016-03-05T23:59:19+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001454s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `wensy_document` [ RunTime:0.001447s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `create_time` < 1457193559 ) AND ( deadline = 0 OR deadline > 1457193559 ) ORDER BY `id` DESC  [ RunTime:0.000275s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `wensy_channel` [ RunTime:0.000965s ]
+SQL: SELECT `id`,`pid`,`title`,`alias`,`url`,`sort`,`create_time`,`update_time`,`status`,`target` FROM `wensy_channel` WHERE ( status=1 ) ORDER BY sort  [ RunTime:0.000554s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000316s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000291s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000214s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.009775s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.003649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon` FROM `wensy_category` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=0 )  [ RunTime:0.000326s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( pid=1 )  [ RunTime:0.000343s ]
+SQL: SELECT `id`,`name`,`pid`,`title`,`link_id` FROM `wensy_category` WHERE ( `status` = 1 ) ORDER BY sort  [ RunTime:0.000230s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wensy_document` WHERE ( `status` = 1 ) AND ( `pid` = 0 ) AND ( `category_id` IN ('2','39') ) AND ( `create_time` < 1457193559 ) AND ( deadline = 0 OR deadline > 1457193559 ) ORDER BY `level` DESC,`id` DESC LIMIT 0,10   [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000012s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.003179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-03-05T23:59:44+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001107s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000344s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/add%' ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001122s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=82 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000204s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000423s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000269s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000275s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000238s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001654s ]
+SQL: SELECT * FROM `wensy_category` WHERE ( `name` = 'share' ) LIMIT 1   [ RunTime:0.000272s ]
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 981 行.
+SQL: INSERT INTO `wensy_category` (`title`,`name`,`allow_publish`,`check`,`model`,`type`,`icon`,`display`,`reply`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`id`,`pid`,`create_time`,`update_time`,`status`) VALUES ('心得分享','share',1,0,'2','2',0,1,1,0,10,'','','','','','','',0,42,1457193584,1457193584,1) [ RunTime:0.000218s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `wensy_action` [ RunTime:0.000987s ]
+SQL: SELECT * FROM `wensy_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `wensy_action_log` [ RunTime:0.000959s ]
+SQL: INSERT INTO `wensy_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',43,1457193584,'操作url：/index.php?s=/Admin/Category/add.html') [ RunTime:0.000449s ]
+
+[ 2016-03-05T23:59:46+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/index.html
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001990s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000576s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/index%' ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.001357s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000251s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000224s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000273s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000238s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001538s ]
+SQL: SELECT `id`,`name`,`title`,`sort`,`pid`,`allow_publish`,`status` FROM `wensy_category` WHERE ( `status` > -1 ) ORDER BY sort  [ RunTime:0.000256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.006490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.011160s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.016825s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004333s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.001058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.004965s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.022179s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004645s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000011s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010264s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.004834s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000010s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010436s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.005021s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.006036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.010619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000991s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001115s ]
+
+[ 2016-03-05T23:59:54+08:00 ] 127.0.0.1 /index.php?s=/Admin/Category/edit.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.002092s ]
+SQL: SELECT * FROM `wensy_menu` WHERE ( `pid` = 0 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000401s ]
+SQL: SELECT `id` FROM `wensy_menu` WHERE ( url like '%Category/edit%' ) LIMIT 1   [ RunTime:0.000369s ]
+SQL: SHOW COLUMNS FROM `wensy_menu` [ RunTime:0.002681s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=81 ) LIMIT 1   [ RunTime:0.000691s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=80 ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SELECT `id`,`pid`,`title` FROM `wensy_menu` WHERE ( id=68 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SELECT DISTINCT  `group` FROM `wensy_menu` WHERE ( pid = 68 )  [ RunTime:0.000375s ]
+SQL: SELECT `id`,`url` FROM `wensy_menu` WHERE ( `pid` = 68 ) AND ( `hide` = 0 )  [ RunTime:0.000449s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '系统设置' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000336s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000238s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wensy_menu` WHERE ( `group` = '数据备份' ) AND ( `pid` = 68 ) AND ( `hide` = 0 ) ORDER BY sort asc  [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `wensy_category` [ RunTime:0.001402s ]
+NOTIC: [8] Undefined index: name /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: meta_title /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: keywords /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [8] Undefined index: meta_title /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 1040 行.
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] Missing argument 1 for arr2str() /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 61 行.
+NOTIC: [8] Undefined variable: arr /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] implode(): Invalid arguments passed /Users/moxi/Documents/web/wensy/Application/Common/Common/function.php 第 62 行.
+NOTIC: [2] json_encode() expects at least 1 parameter, 0 given /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Model.class.php 第 981 行.
+SQL: UPDATE `wensy_category` SET `sort`=1,`title`='心得分享',`update_time`=1457193593,`status`=1 WHERE ( `id` = 43 ) [ RunTime:0.000226s ]
+NOTIC: [2] unlink(./Runtime/Temp/cbc58bd3cdec352c980d0ad729b5c219.php): No such file or directory /Users/moxi/Documents/web/wensy/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+SQL: SHOW COLUMNS FROM `wensy_action` [ RunTime:0.001051s ]
+SQL: SELECT * FROM `wensy_action` WHERE ( `name` = 'update_category' ) LIMIT 1   [ RunTime:0.000231s ]
+SQL: SHOW COLUMNS FROM `wensy_action_log` [ RunTime:0.001054s ]
+SQL: INSERT INTO `wensy_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES (11,1,2130706433,'category',43,1457193593,'操作url：/index.php?s=/Admin/Category/edit.html') [ RunTime:0.000251s ]
+
