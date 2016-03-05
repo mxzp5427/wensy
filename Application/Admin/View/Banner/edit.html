@@ -1,0 +1,113 @@
+<extend name="Public/base"/>
+
+<block name="body">
+<script type="text/javascript" src="__STATIC__/uploadify/jquery.uploadify.min.js"></script>
+	<div class="main-title">
+		<h2>
+			{$info['id']?'编辑':'新增'}轮播
+			<notempty name="pid">
+				[&nbsp;父导航：<a href="{:U('index','pid='.$pid)}">{$parent.title}</a>&nbsp;]
+			</notempty>
+		</h2>
+	</div>
+	<form action="{:U()}" method="post" class="form-horizontal">
+		<input type="hidden" name="pid" value="{$pid}">			
+		<div class="form-item">
+			<label class="item-label">显示位置<span class="check-tips">（轮播图显示位置）</span></label>
+			<div class="controls">
+				<select name="position">
+					<option value="-1">轮播图显示位置</option>
+					<volist name=":C('BANNER_POSITION')" id="position">
+						<option value="{$key}" <eq name="info.position" value="$key">selected</eq>>{$position}</option>
+					</volist>
+				</select>
+			</div>
+		</div>
+		<div class="form-item">
+			<label class="item-label">轮播标题<span class="check-tips">（用于显示的文字）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="title" value="{$info.title|default=''}">
+			</div>
+		</div>
+		<div class="form-item">
+			<label class="item-label">轮播图<span class="check-tips"></span></label>
+			<div class="controls">
+				<input type="file" id="upload_picture_image">
+				<input type="hidden" name="image" id="cover_id_image" value="{$info.image}"/>
+				<div class="upload-img-box">
+				<notempty name="info['image']">
+					<div class="upload-pre-item"><img src="{$info['image']|get_cover='path'}"/></div>
+				</notempty>
+				</div>
+			</div>
+			<script type="text/javascript">
+			//上传图片
+			/* 初始化上传插件 */
+			$("#upload_picture_image").uploadify({
+				"height"          : 30,
+				"swf"             : "__STATIC__/uploadify/uploadify.swf",
+				"fileObjName"     : "download",
+				"buttonText"      : "上传图片",
+				"uploader"        : "{:U('File/uploadPicture',array('session_id'=>session_id()))}",
+				"width"           : 120,
+				'removeTimeout'	  : 1,
+				'fileTypeExts'	  : '*.jpg; *.png; *.gif;',
+				"onUploadSuccess" : uploadPictureimage,
+				'onFallback' : function() {
+					alert('未检测到兼容版本的Flash.');
+				}
+			});
+			function uploadPictureimage(file, data){
+				var data = $.parseJSON(data);
+				var src = '';
+				if(data.status){
+					$("#cover_id_image").val(data.id);
+					src = data.url || '__ROOT__' + data.path
+					$("#cover_id_image").parent().find('.upload-img-box').html(
+						'<div class="upload-pre-item"><img src="__ROOT__' + src + '"/></div>'
+					);
+				} else {
+					updateAlert(data.info);
+					setTimeout(function(){
+						$('#top-alert').find('button').click();
+						$(that).removeClass('disabled').prop('disabled',false);
+					},1500);
+				}
+			}
+			</script>
+		</div>
+			
+		<div class="form-item">
+			<label class="item-label">轮播连接<span class="check-tips">（用于跳转的URL，支持带http://的URL或U函数参数格式）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-large" name="url" value="{$info.url|default=''}">
+			</div>
+		</div>
+        <div class="form-item">
+            <label class="item-label">新窗口打开<span class="check-tips">（是否新窗口打开链接）</span></label>
+            <div class="controls">
+                <select name="target">
+                     <option value="0">否</option>
+					 <option value="1">是</option>
+                </select>
+            </div>
+        </div>
+		<div class="form-item">
+			<label class="item-label">优先级<span class="check-tips">（轮播显示顺序）</span></label>
+			<div class="controls">
+				<input type="text" class="text input-small" name="sort" value="{$info.sort|default='0'}">
+			</div>
+		</div>
+		<div class="form-item">
+			<input type="hidden" name="id" value="{$info.id|default=''}">
+			<button class="btn submit-btn ajax-post" id="submit" type="submit" target-form="form-horizontal">确 定</button>
+			<button class="btn btn-return" onclick="javascript:history.back(-1);return false;">返 回</button>
+		</div>
+	</form>
+</block>
+<block name="script">
+<script type="text/javascript" charset="utf-8">
+	//导航高亮
+	highlight_subnav('{:U('index')}');
+</script>
+</block>
