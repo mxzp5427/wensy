@@ -30,6 +30,9 @@ class HomeController extends Controller {
         if(!C('WEB_SITE_CLOSE')){
             $this->error('站点已经关闭，请稍后访问~');
         }
+
+        $this->theme = 'singlecolor';
+        $this->current = CONTROLLER_NAME;
     }
 
 	/* 用户登录检测 */

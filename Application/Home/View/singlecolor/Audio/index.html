@@ -1,0 +1,93 @@
+<include file="Public:head" />
+<body>
+	<include file="Public:header" />
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">{$category.title}</h1>
+                            <p>{$category.description}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="recent-projects" class="recent-projects">
+        <div class="container">
+            <div class="row">
+                <!--<h1 class="title text-center wow fadeInDown" data-wow-duration="500ms" data-wow-delay="300ms">Recent Projects</h1>
+                <p class="text-center padding-bottom wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+                Ut enim ad minim veniam, quis nostrud </p>-->
+
+
+                <foreach name="category.child" item="vo">
+                <div class="col-sm-3 col-xs-6 wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <a href="{:U('lists?category='.$vo['id'])}">
+                    <div class="portfolio-wrapper">   
+                        <div class="portfolio-single">
+                            <div class="portfolio-thumb">
+                                <img src="__SINGLECOLOR__/images/portfolio/1.jpg" class="img-responsive" alt="">
+                            </div>
+                            <!--<div class="portfolio-view">
+                                <ul class="nav nav-pills">
+                                    <li><a href="__SINGLECOLOR__/images/portfolio/1.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>-->
+                        </div>
+                        <div class="portfolio-info">
+                            <h2 style="text-align:center;">{$vo.title}</h2>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                </foreach>
+                
+            </div>
+        </div>
+    </section>
+    <!--/#recent-projects-->
+
+    <section id="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <p><img src="__SINGLECOLOR__/images/home/clients.png" class="img-responsive" alt=""></p>
+                        <h1 class="title">Happy Learning</h1>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
+                    </div>
+                    <!--<div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="__SINGLECOLOR__/images/home/client1.png" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="__SINGLECOLOR__/images/home/client2.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="__SINGLECOLOR__/images/home/client3.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="__SINGLECOLOR__/images/home/client4.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="__SINGLECOLOR__/images/home/client5.png" class="img-responsive" alt=""></a>
+                        </div>
+                         <div class="col-xs-3 col-sm-2">
+                            <a href="#"><img src="__SINGLECOLOR__/images/home/client6.png" class="img-responsive" alt=""></a>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+     </section>
+    <!--/#clients-->
+
+
+    <include file="Public:footer" />   
+</body>
+</html>

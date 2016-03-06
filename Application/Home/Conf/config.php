@@ -17,7 +17,7 @@ return array(
     'TAGLIB_PRE_LOAD'     =>    'OT\\TagLib\\Article,OT\\TagLib\\Think',
         
     /* 主题设置 */
-    'DEFAULT_THEME' =>  'default',  // 默认模板主题名称
+    'DEFAULT_THEME' =>  'singlecolor',  // 默认模板主题名称
 
     /* 数据缓存设置 */
     'DATA_CACHE_PREFIX' => 'onethink_', // 缓存前缀
@@ -26,8 +26,8 @@ return array(
     /* 文件上传相关配置 */
     'DOWNLOAD_UPLOAD' => array(
         'mimes'    => '', //允许上传的文件MiMe类型
-        'maxSize'  => 5*1024*1024, //上传的文件大小限制 (0-不做限制)
-        'exts'     => 'jpg,gif,png,jpeg,zip,rar,tar,gz,7z,doc,docx,txt,xml', //允许上传的文件后缀
+        'maxSize'  => 50*1024*1024, //上传的文件大小限制 (0-不做限制)
+        'exts'     => 'jpg,gif,png,jpeg,zip,rar,tar,gz,7z,doc,docx,txt,xml,mp3,flv,wav,ogg', //允许上传的文件后缀
         'autoSub'  => true, //自动子目录保存文件
         'subName'  => array('date', 'Y-m-d'), //子目录创建方式，[0]-函数名，[1]-参数，多个参数使用数组
         'rootPath' => './Uploads/Download/', //保存根路径
@@ -42,7 +42,7 @@ return array(
     /* 编辑器图片上传相关配置 */
     'EDITOR_UPLOAD' => array(
         'mimes'    => '', //允许上传的文件MiMe类型
-        'maxSize'  => 2*1024*1024, //上传的文件大小限制 (0-不做限制)
+        'maxSize'  => 50*1024*1024, //上传的文件大小限制 (0-不做限制)
         'exts'     => 'jpg,gif,png,jpeg', //允许上传的文件后缀
         'autoSub'  => true, //自动子目录保存文件
         'subName'  => array('date', 'Y-m-d'), //子目录创建方式，[0]-函数名，[1]-参数，多个参数使用数组
@@ -58,6 +58,9 @@ return array(
     /* 模板相关配置 */
     'TMPL_PARSE_STRING' => array(
 		'__HOME__'   => __ROOT__ . '/Public/Home',
+        '__MULTICOLOR__'   => __ROOT__ . '/Public/Home/multicolor',
+        '__NINESTARS__'   => __ROOT__ . '/Public/Home/ninestars',
+        '__SINGLECOLOR__'   => __ROOT__ . '/Public/Home/singlecolor',
         '__STATIC__' => __ROOT__ . '/Public/static',
         '__ADDONS__' => __ROOT__ . '/Public/' . MODULE_NAME . '/Addons',
         '__IMG__'    => __ROOT__ . '/Public/' . MODULE_NAME . '/images',

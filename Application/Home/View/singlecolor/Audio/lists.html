@@ -1,0 +1,75 @@
+<include file="Public:head" />
+<body>
+	<include file="Public:header" /> 
+    
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">{$category.title}</h1>
+                            <p>{$category.description}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#page-breadcrumb-->
+    
+    <section id="blog" class="padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="timeline-blog overflow padding-top">
+                    <!--<div class="timeline-date text-center">
+                        <a href="#" class="btn btn-common uppercase">November 2013</a>
+                    </div>-->
+
+                    <div class="timeline-divider overflow padding-bottom">
+                        <foreach name="list" item="vo" key="key">
+                        <div <if condition="($key+1) % 2 eq 0">class="col-sm-6 padding-left padding-top arrow-left wow fadeInRight" <else/>class="col-sm-6 padding-right arrow-right wow fadeInLeft"</if> data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <div class="single-blog timeline">
+                                <div class="single-blog-wrapper">
+                                    <notempty name="vo.cover_id">
+                                    <div class="post-thumb">
+                                        <img src="{$vo.cover_id|get_cover='path'}" class="img-responsive" alt="">
+                                        <div class="post-overlay">
+                                           <span class="uppercase"><a href="javascript:;">{$vo.create_time|date="d",###} <br><small>{$vo.create_time|date="M",###}</small></a></span>
+                                       </div>
+                                    </div>
+                                    </notempty>
+                                    <div class="post-thumb">
+                                        <audio src="__SINGLECOLOR__/audio/juicy.mp3" preload="auto"></audio>
+                                    </div>
+                                </div>
+                                <div class="post-content overflow">
+                                    <h2 class="post-title bold"><a href="{:U('detail?id='.$vo['id'])}">{$vo.title}</a></h2>
+                                    <h3 class="post-author"><a href="#">Posted by enjoy english</a></h3>
+                                    <p>{$vo.description}</p>
+                                    <a href="{:U('detail?id='.$vo['id'])}" class="read-more">View More</a>
+                                    <div class="post-bottom overflow">
+                                        <span class="post-date pull-left">{$vo.create_time|date="F d, Y", ###}</span>
+                                        <!--<span class="comments-number pull-right"><a href="#">3 comments</a></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </foreach>
+                    </div>
+                </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#blog-->
+    <script type="text/javascript" src="__SINGLECOLOR__/js/audio.min.js"></script>
+    <script>
+      audiojs.events.ready(function() {
+        var as = audiojs.createAll();
+      });
+    </script>
+    <script type="text/javascript" src="__SINGLECOLOR__/js/masonry.min.js"></script>
+    <include file="Public:footer" /> 
+</body>
+</html>
